@@ -1,0 +1,202 @@
+*{
+    /* 设置全局外边距和内边距 */
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;/* 去除A链接下划线 */
+}
+.head{
+    width: 100%;/* 宽度 100% */
+    height: 100px; /* 高度 100 像素 */
+    box-shadow: 0px 5px 5px #f2f2f2;/* 水平 垂直 大小 颜色 */
+}
+.head2{
+    width: 1210px;/* 宽度 90% */
+    height: 60px; /* 高度60像素 */
+    margin: 0 auto;/* 居中 */
+}
+/*logo*/
+.head_logo{
+    width: 150px; /* 宽度 */
+    height: 50px; /* 高度 */
+    background: url("../image/icon.png") no-repeat;/* 引用背景图片 */
+    margin-top: 24px;/*  上外边距 24像素  */
+    position: absolute; /* 绝对定位 */
+}
+/*欢迎注册*/
+.head_title{
+    margin-top:26px;/*外边距 距离上边26像素*/
+    padding-left: 190px;/* 内边距 距离左边 190像素 */
+    width: 550px;/* 宽带550像素 */
+    height: 49px;/* 高度 49像素 */
+    text-align: left;/* 文本对齐方式  左对齐 */
+    float: left; /* 左浮动 */
+    line-height: 49px; /* 行高 49 像素 */
+    font-size: 24px;
+}
+
+/* 登录 */
+.head_login{
+    float: right;/* 右浮动 */
+    margin-top: 55px;/* 外边距 距离上边 55 像素 */
+    font-size: 16px; /* 字体大小 16 像素 */
+    color: #999;/* 颜色 */
+}
+
+/* 中间内容部分 */
+.center{
+    width: 100%;/* 宽度 100% */
+    height: 500px;/* 高度500像素 */
+}
+.center2{
+    width: 830px; /* 宽度 830像素 */
+    height: 500px; /* 高度500 像素 */
+    margin: 60px auto;/* 上外边距60像素  右下左边距自动 */
+}
+
+/*中间左边*/
+.left{
+    width: 400px; /* 宽度400像素 */
+    float: left; /* 浮动 左浮 */
+}
+
+/*自定义的输入框*/
+.form-input{
+    margin: 0 auto;/* 居中 */
+    width: 398px;
+    height: 52px;
+    border: 1px solid #E3E3E3;/* 1像素 边框 */
+}
+.form-input>label{
+    padding-left: 20px;
+    width: 90px;
+    height: 52px;
+    float: left;
+    line-height: 52px;/* 设置行间的距离 行高 */
+    font-size: 14px;
+}
+.form-input>input{
+    float: left;
+    width: 200px;
+    border: none;/* 隐藏边框 */
+    outline: none;/* 隐藏选中的框 */
+    height: 19px;
+    padding-top: 16px; /* 上内边距 16像素 */
+    padding-left: 20px;/* 左内边距 20像素*/
+}
+
+.input-tips{
+    color: #f91;
+    height: 27px;
+    font-size: 12px;/* 字体大小 */
+    padding-top: 5px;
+}
+
+.form-agree{
+    color: #333;
+    font-size: 12px;
+}
+.form-agree input{
+    width: 18px;
+    height: 18px;
+    vertical-align: text-top; /* 设置垂直对齐方式 文本顶对齐  */
+}
+.form-agree span{
+    margin-left: 6px;
+}
+
+/*注册按钮*/
+.btn_reg{
+    outline: none;/* 隐藏选中的框 */
+    width: 100%;
+    height: 54px;
+    color: #fff;
+    background: #e22;
+    border: none;/* 隐藏边框 */
+    font-size: 16px;
+    margin-top: 35px;
+    cursor: pointer;/* 鼠标形状 设置为手型  */
+}
+
+/*中间右边*/
+.right{
+    float: left;
+    margin-left: 104px;
+    height: 505px;
+    padding-left: 90px;
+    border-left: solid 1px #e6e6e6;/* 左边框 1像素*/
+}
+
+/* 右边上边 */
+.right_up{
+    width: 160px;
+    height: 60px;
+    border-bottom: solid 1px #ddd;/* 下边框 1像素 实线 */
+    margin-left: 30px;
+}
+
+.company-a{
+    display: block;/*显示为块级*/
+    width: 170px;
+    height: 40px;
+    font-size: 14px;
+    /*line-height: 40px;*//*设置行高与高度相同，文字会垂直居中*/
+}
+.company-a:hover{
+    font-weight: bold;/* 字体加粗*/
+}
+
+.company-a>span{
+    color: #666;
+    vertical-align: middle;/* 垂直对齐 中间 */
+}
+
+.right_img{
+    display: inline-block;/* 让不具备宽高属性的标签具有宽高属性 行级转块级 */
+    width: 30px;
+    height: 29px;
+    vertical-align: middle;/* 垂直对齐 中间 */
+    margin-right: 15px;
+    background: url('../image/icon.png')  no-repeat;
+    background-position: 0 -50px;/* 背景图片定位 */
+}
+
+.right_down{
+    width: 160px;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+.right_img2{
+    display: inline-block;/* 行内标签转换为块级标签，之后才可以设置宽高属性*/
+    width: 30px;
+    height: 30px;
+    vertical-align: text-bottom;/*垂直对齐  文本底部*/
+    margin-right: 15px;
+    margin-top:7px;
+    float:left;
+    background: url('../image/icon.png')  no-repeat;/*指定背景图片 */
+    background-position: -50px -50px; /*指定背景图片显示位置*/
+}
+
+.phone{
+    width: 213px;
+    height: 270px;
+    margin-top: 50px;
+    background: url('../image/phone.jpg')  no-repeat;
+}
+.bottom{
+    width:1210px ;
+    font-size: 12px;
+    text-align: center;/*文本居中*/
+    border-top: solid 1px #e6e6e6;/*设置上边框*/
+    margin: 120px auto;/*设置水平居中，距离顶部120px*/
+    color:#999999;
+}
+.bottom_link{
+    margin: 30px auto;
+}
+.bottom_link a{
+    margin: 0 10px;
+    color: #999999;
+}

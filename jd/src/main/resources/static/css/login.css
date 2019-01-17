@@ -1,0 +1,244 @@
+/*设置全局样式，清除margin和padding*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;/*去除a标签下划线 默认为underline*/
+    color: #666666;
+}
+
+body{
+    font-size: 14px;/*设置全局字体大小*/
+    font-family: 微软雅黑;/*设置字体*/
+}
+
+button,input{outline: none;}/*设置聚焦是不显示边框*/
+.head_contents{
+    width: 900px;
+    height: 60px;
+    margin: 15px auto ;/*设置水平居中，0为上下,auto为左右，auto表示左右相同。*/
+}
+.head_logo{
+    display: inline-block;/*转换为块级元素*/
+    width: 170px;
+    height: 60px;
+    background: url("../image/logo.png") no-repeat;/*设置背景图*/
+    float: left;
+}
+.head_text{
+   float: left;
+    font-size: 24px;
+    margin-left: 30px;/*外边距*/
+    width: 200px;
+    height: 60px;
+    line-height: 60px;/*行高跟高度相同时，文字垂直居中*/
+   /* padding: 30px;*//*内边距*/
+}
+.head_research{
+    float: right;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+    background: url("../image/q-icon.png") no-repeat 0 4px;/*定位背景图片*/
+    padding-left: 22px;/*左内边距22 与背景图片隔开*/
+    margin-top: 38px;
+}
+/*当鼠标聚焦时的样式*/
+.head_research:hover{
+    color: #E4193C;
+    text-decoration: underline;/*设置下划线*/
+}
+/*中间部分*/
+.contents{
+    width: 100%;/*设置全屏宽度*/
+    height: 500px;
+    background: #E93854;
+}
+
+.login_contents{
+    width: 900px;
+    height: 470px;
+    background: url("../image/picshow.png") no-repeat;
+    margin: 0 auto;
+}
+.login{
+    background: white;
+    width: 346px;
+    height: 380px;
+    margin-left: 571px;/*与背景图片分开*/
+    margin-top: 60px;
+    display: inline-block;/**/
+    /*
+        遇到一个问题？？
+        设置与父元素的上边距时，不起作用。
+        1）display 为inline-block;
+        2)使用float ,使块浮动。
+        3）padding
+    */
+}
+
+.login_tab{
+    width: 100%;
+    height: 50px;
+    border-bottom: solid silver 1px;
+}
+
+.login_tab_r{
+    display: inline-block;
+    width: 149px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;/*文本水平居中*/
+    line-height: 30px;/*垂直居中*/
+    float: left;
+    margin: 10px auto;/*上下10px 左右居中*/
+}
+.login_tab_l{
+    display: inline-block;
+    width: 149px;
+    height: 30px;
+    font-size: 18px;
+    text-align: center;/*文本水平居中*/
+    line-height: 30px;/*垂直居中*/
+    float: left;
+    margin: 10px auto;/*上下10px 左右居中*/
+}
+
+.border_right{
+    border-right:solid silver 1px ;
+}
+
+.login_tab_l:hover{
+    font-weight:700 ;/*加粗*/
+    color: #E4193C;
+}
+.login_tab_r:hover{
+    font-weight:700 ;/*加粗*/
+    color: #E4193C;
+}
+
+.msg{
+    min-height: 23px;/*设置最小高度*/
+    margin: 10px auto;
+    text-align: center;
+    color:#E4193C;
+}
+
+/*登录表单样式*/
+.login_form{
+    width: 100%;
+    height: 200px;
+}
+.login_item{
+    width: 304px;
+    height: 38px;
+    margin: 10px auto 20px;/*上10 下20 左右自动*/
+    border: 1px solid #bdbdbd;
+}
+.user_lab{
+    width: 38px;
+    height:38px;
+    display: block;
+    float: left;
+    background: url("../image/pwd-icons-new.png") no-repeat 0 0;
+    border-right: 1px solid #bdbdbd;
+}
+.form-input{
+    border: 0;/*去除边框*/
+    height: 38px;
+    width: 254px;
+    padding-left: 5px;
+}
+
+.pwd_lab{
+    width: 38px;
+    height:38px;
+    display: block;
+    float: left;
+    background: url("../image/pwd-icons-new.png") no-repeat -48px 0;
+    border-right: 1px solid #bdbdbd;
+}
+/*忘记密码*/
+.forget_item{
+    width: 304px;
+    height: 38px;
+    margin: 10px auto 20px;/*上10 下20 左右自动*/
+}
+.auto_login{
+    width: 100px;
+    height: 38px;
+    float: left;
+    line-height: 38px;
+}
+.forget_pwd{
+    float: right;
+    display: inline-block;
+    text-align: right;/*文本靠右显示*/
+    width: 100px;
+    height: 38px;
+    line-height: 38px;
+}
+.forget_pwd:hover{
+    color: #E4193C;
+    text-decoration: underline;
+}
+.login_btn{
+   width: 100%;
+   height: 100%;
+   background: #E4193C;
+   color: white;
+    border: 0;
+    font-size: 20px;
+}
+.QQ_icon{
+    background: url("../image/QQ-weixin.png") no-repeat;
+    display: block;
+    width: 19px;
+    height: 19px;
+    float: left;
+}
+.weixin_icon{
+    background: url("../image/QQ-weixin.png") no-repeat -20px 0;
+    display: block;
+    width: 19px;
+    height: 19px;
+    float: left;
+}
+.register_icon{
+    background: url("../image/pwd-icons-new.png") no-repeat -104px -75px;
+    display: block;
+    width: 19px;
+    height: 19px;
+    float: left;
+}
+ul{
+    list-style: none;/*去除ul前面的点*/
+}
+li{
+    float: left;/*使li向左浮动，在一行显示*/
+}
+.split{
+    display: inline-block;
+    width: 25px;
+    height: 100%;
+    text-align: center;
+}
+.register_li{
+    float: right;
+}
+.bottom{
+    width:1210px ;
+    font-size: 12px;
+    text-align: center;/*文本居中*/
+    margin: 20px auto;/*设置水平居中，距离顶部120px*/
+    color:#999999;
+}
+.bottom_link{
+    margin: 30px auto;
+}
+.bottom_link a{
+    margin: 0 10px;
+    color: #999999;
+}
+
